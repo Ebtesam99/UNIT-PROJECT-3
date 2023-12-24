@@ -22,7 +22,9 @@
             </a>
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="{% url 'main:homePage' %}" class="nav-link px-2 link-body-emphasis">Home</a></li>
               {% if request.user.is_staff %}
+              
               <li class="nav-item dropdown">
                 <a class="  nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Add Service</a>
                 <ul class="dropdown-menu">
